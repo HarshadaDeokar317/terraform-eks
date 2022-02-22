@@ -30,9 +30,10 @@ terraform {
 
   required_version = ">= 0.14"
   
+}
+
   provider  "aws" {
       shared_credentials_file = "/home/gslab/.aws/credentials"
        profile = "default" 
   }
-}
 
