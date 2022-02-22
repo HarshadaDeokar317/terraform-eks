@@ -15,10 +15,10 @@ variable "region" {
  terraform {
    backend "s3"{
 
-    bucket = "statefilestorage"
+    bucket = "terraformstatefilebucket1"
      key = "dev/terraform.tfstate"
     region = "us-east-1"
-     dynamodb_table = "terraform_state"
+     dynamodb_table = "terraform_state_1"
    }
  }
 
