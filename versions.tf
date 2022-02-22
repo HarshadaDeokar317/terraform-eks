@@ -49,6 +49,3 @@ variable "secret_key" {
   default = "D5a4QK471hQmdsoeKMKDvrnazqlncKygHepy7Jh1"
 }
 
-variable "region" {
-  default = "us-west-2"
-}
