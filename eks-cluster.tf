@@ -1,14 +1,5 @@
 #eks cluster specification
 
-provider "aws" {
-     access_key = var.AWS_ACCESS_KEY
-  secret_key = var.AWS_SECRET_KEY
-  region     = var.AWS_REGION
-     shared_credentials_files = ["~/.aws/credentials"]
-
-  
- 
-}
 
 module "eks" {
   source          = "terraform-aws-modules/eks/aws"
