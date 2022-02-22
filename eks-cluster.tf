@@ -6,7 +6,7 @@ module "eks" {
   version         = "17.24.0"
   cluster_name    = local.cluster_name
   cluster_version = "1.20"
-  subnets         = "module.vpc.private_subnetsshared_credentials_files = [~/.aws/credentials]"
+  subnets         = "module.vpc.private_subnets
 
 
   vpc_id = module.vpc.vpc_id
