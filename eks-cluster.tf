@@ -4,6 +4,8 @@ provider "aws" {
      access_key = var.AWS_ACCESS_KEY
   secret_key = var.AWS_SECRET_KEY
   region     = var.AWS_REGION
+     shared_credentials_files = ["~/.aws/credentials"]
+
   
  
 }
@@ -13,7 +15,8 @@ module "eks" {
   version         = "17.24.0"
   cluster_name    = local.cluster_name
   cluster_version = "1.20"
-  subnets         = module.vpc.private_subnets
+  subnets         = module.vpc.private_subnetsshared_credentials_files = ["~/.aws/credentials"]
+
 
   vpc_id = module.vpc.vpc_id
 
