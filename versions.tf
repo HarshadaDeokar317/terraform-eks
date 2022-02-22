@@ -4,8 +4,7 @@ terraform {
       source  = "hashicorp/aws"
       version = ">= 3.20.0"
       
-       shared_credentials_file = "/home/gslab/.aws/credentials"
-       profile = "default"
+    
     }
 
     random = {
@@ -30,5 +29,10 @@ terraform {
   }
 
   required_version = ">= 0.14"
+  
+  provider  "aws" {
+      shared_credentials_file = "/home/gslab/.aws/credentials"
+       profile = "default" 
+  }
 }
 
