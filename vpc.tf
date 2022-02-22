@@ -1,11 +1,5 @@
 
 
-module "terraform-s3" {
-
-  source = "/home/gslab/Desktop/Terraform/terraform-s3"
-  
-}
-
 variable "region" {
   default     = "us-east-2"
   description = "AWS region"
