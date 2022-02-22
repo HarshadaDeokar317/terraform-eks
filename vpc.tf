@@ -1,8 +1,4 @@
-provider{
-  
-   shared_credentials_file = "/home/gslab/.aws/credentials"
-   profile = "default"
-}
+
 
 module "terraform-s3" {
 
