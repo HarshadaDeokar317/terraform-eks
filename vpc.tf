@@ -1,18 +1,15 @@
 
 
-provider "aws" {
-     access_key = var.AWS_ACCESS_KEY
-  secret_key = var.AWS_SECRET_KEY
-  region     = var.AWS_REGION
- 
-}
-
 module "terraform-s3" {
 
   source = "/home/gslab/Desktop/Terraform/terraform-s3"
   
 }
 
+variable "region" {
+  default     = "us-east-2"
+  description = "AWS region"
+}
 
 
 terraform {
