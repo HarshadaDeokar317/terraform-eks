@@ -32,8 +32,23 @@ terraform {
   
 }
 
-  provider  "aws" {
-      shared_credentials_file = "/home/gslab/.aws/credentials"
-       profile = "default" 
-  }
+ 
+provider "aws" {
+  access_key = "${var.access_key}"
+  secret_key = "${var.secret_key}"
+  region = "${var.region}"
+}
 
+
+
+variable "access_key" {
+  default = "AKIA2M3VIEP5XUSDSDO6"
+}
+
+variable "secret_key" {
+  default = "D5a4QK471hQmdsoeKMKDvrnazqlncKygHepy7Jh1"
+}
+
+variable "region" {
+  default = "us-west-2"
+}
