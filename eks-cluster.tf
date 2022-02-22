@@ -1,5 +1,11 @@
 #eks cluster specification
 
+provider "aws" {
+    
+  profile = "default"
+ 
+}
+
 module "eks" {
   source          = "terraform-aws-modules/eks/aws"
   version         = "17.24.0"
