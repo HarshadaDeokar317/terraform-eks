@@ -16,6 +16,13 @@ variable "region" {
      }
  }
 
+provider "aws"{
+  
+  profile = "Harshu"
+  
+}
+  
+
 data "aws_availability_zones" "available" {}
 
 locals {
