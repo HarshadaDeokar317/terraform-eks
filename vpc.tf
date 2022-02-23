@@ -6,15 +6,15 @@ variable "region" {
 }
 
 
-#   terraform {
-#     backend "s3"{
+   terraform {
+     backend "s3"{
 
-#      bucket = "terraformstatefilebucket1"
-#       key = "dev/terraform.tfstate"
-#      region = "us-east-1"
-#       dynamodb_table = "terraform_state_1"
-#     }
-#  }
+      bucket = "statefilestoreterraform"
+       key = "dev/terraform.tfstate"
+      region = "us-east-1"
+       dynamodb_table = "terraform_state"
+     }
+ }
 
 data "aws_availability_zones" "available" {}
 
