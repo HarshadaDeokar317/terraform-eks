@@ -6,15 +6,15 @@ variable "region" {
 }
 
 
-   terraform {
-     backend "s3"{
+#    terraform {
+#      backend "s3"{
 
-      bucket = "statefilestoreterraform"
-       key = "dev/terraform.tfstate"
-      region = "us-east-1"
-       dynamodb_table = "terraform_state"
-     }
- }
+#       bucket = "statefilestoreterraform"
+#        key = "dev/terraform.tfstate"
+#       region = "us-east-1"
+#        dynamodb_table = "terraform_state"
+#      }
+#  }
 provider "aws" {
 
   access_key = "AKIA2M3VIEP5XTQAZWFN"
