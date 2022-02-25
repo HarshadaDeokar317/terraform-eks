@@ -15,10 +15,12 @@ variable "region" {
        dynamodb_table = "terraform_state"
      }
  }
+provider "aws" {
 
-provider "aws"{
-  
-  profile = "Harshu"
+  access_key = "AKIA2M3VIEP5XTQAZWFN"
+  secret_key = "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"
+  region = "us-east-1"
+  profile = "default"
   
 }
   
